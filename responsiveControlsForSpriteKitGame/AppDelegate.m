@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Amadeusz Polak. All rights reserved.
 //
 
+#import "SharedTextureCache.h"
+
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -16,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //loading textures
+    SKTextureAtlas *atlas = [SKTextureAtlas atlasNamed:@"spritesAll"];
+    for (NSString *textureName in [atlas textureNames]) {
+        SKTexture *texture = [atlas textureNamed:textureName];
+        [[SharedTextureCache sharedCache] addTexture:texture name:textureName];
+    }
     return YES;
 }
 

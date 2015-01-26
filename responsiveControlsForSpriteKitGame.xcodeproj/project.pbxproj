@@ -16,6 +16,11 @@
 		FADE05031A7689CD00F67821 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FADE05021A7689CD00F67821 /* Images.xcassets */; };
 		FADE05061A7689CD00F67821 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FADE05041A7689CD00F67821 /* LaunchScreen.xib */; };
 		FADE05121A7689CE00F67821 /* responsiveControlsForSpriteKitGameTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE05111A7689CE00F67821 /* responsiveControlsForSpriteKitGameTests.m */; };
+		FADE051D1A768D6C00F67821 /* HUDNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE051C1A768D6C00F67821 /* HUDNode.m */; };
+		FADE05231A76AC5F00F67821 /* SharedTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE05221A76AC5F00F67821 /* SharedTextureCache.m */; };
+		FADE05261A76AD1300F67821 /* spritesAll.atlas in Resources */ = {isa = PBXBuildFile; fileRef = FADE05251A76AD1300F67821 /* spritesAll.atlas */; };
+		FADE05281A76B1A500F67821 /* point.png in Resources */ = {isa = PBXBuildFile; fileRef = FADE05271A76B1A500F67821 /* point.png */; };
+		FADE052B1A76B5B000F67821 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = FADE052A1A76B5B000F67821 /* Player.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +50,14 @@
 		FADE050B1A7689CE00F67821 /* responsiveControlsForSpriteKitGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = responsiveControlsForSpriteKitGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADE05101A7689CE00F67821 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FADE05111A7689CE00F67821 /* responsiveControlsForSpriteKitGameTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = responsiveControlsForSpriteKitGameTests.m; sourceTree = "<group>"; };
+		FADE051B1A768D6C00F67821 /* HUDNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HUDNode.h; sourceTree = "<group>"; };
+		FADE051C1A768D6C00F67821 /* HUDNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HUDNode.m; sourceTree = "<group>"; };
+		FADE05211A76AC5F00F67821 /* SharedTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedTextureCache.h; sourceTree = "<group>"; };
+		FADE05221A76AC5F00F67821 /* SharedTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedTextureCache.m; sourceTree = "<group>"; };
+		FADE05251A76AD1300F67821 /* spritesAll.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = spritesAll.atlas; sourceTree = "<group>"; };
+		FADE05271A76B1A500F67821 /* point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = point.png; sourceTree = "<group>"; };
+		FADE05291A76B5B000F67821 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		FADE052A1A76B5B000F67821 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,13 +101,21 @@
 			children = (
 				FADE04F41A7689CD00F67821 /* AppDelegate.h */,
 				FADE04F51A7689CD00F67821 /* AppDelegate.m */,
+				FADE05271A76B1A500F67821 /* point.png */,
 				FADE04F71A7689CD00F67821 /* GameScene.h */,
 				FADE04F81A7689CD00F67821 /* GameScene.m */,
 				FADE04FA1A7689CD00F67821 /* GameScene.sks */,
+				FADE051B1A768D6C00F67821 /* HUDNode.h */,
+				FADE051C1A768D6C00F67821 /* HUDNode.m */,
+				FADE05211A76AC5F00F67821 /* SharedTextureCache.h */,
+				FADE05221A76AC5F00F67821 /* SharedTextureCache.m */,
+				FADE05291A76B5B000F67821 /* Player.h */,
+				FADE052A1A76B5B000F67821 /* Player.m */,
 				FADE04FC1A7689CD00F67821 /* GameViewController.h */,
 				FADE04FD1A7689CD00F67821 /* GameViewController.m */,
 				FADE04FF1A7689CD00F67821 /* Main.storyboard */,
 				FADE05021A7689CD00F67821 /* Images.xcassets */,
+				FADE05251A76AD1300F67821 /* spritesAll.atlas */,
 				FADE05041A7689CD00F67821 /* LaunchScreen.xib */,
 				FADE04F01A7689CD00F67821 /* Supporting Files */,
 			);
@@ -209,8 +230,10 @@
 			files = (
 				FADE05061A7689CD00F67821 /* LaunchScreen.xib in Resources */,
 				FADE05031A7689CD00F67821 /* Images.xcassets in Resources */,
+				FADE05281A76B1A500F67821 /* point.png in Resources */,
 				FADE04FB1A7689CD00F67821 /* GameScene.sks in Resources */,
 				FADE05011A7689CD00F67821 /* Main.storyboard in Resources */,
+				FADE05261A76AD1300F67821 /* spritesAll.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +251,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FADE052B1A76B5B000F67821 /* Player.m in Sources */,
 				FADE04FE1A7689CD00F67821 /* GameViewController.m in Sources */,
 				FADE04F61A7689CD00F67821 /* AppDelegate.m in Sources */,
+				FADE051D1A768D6C00F67821 /* HUDNode.m in Sources */,
 				FADE04F91A7689CD00F67821 /* GameScene.m in Sources */,
 				FADE04F31A7689CD00F67821 /* main.m in Sources */,
+				FADE05231A76AC5F00F67821 /* SharedTextureCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = responsiveControlsForSpriteKitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -366,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = responsiveControlsForSpriteKitGame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

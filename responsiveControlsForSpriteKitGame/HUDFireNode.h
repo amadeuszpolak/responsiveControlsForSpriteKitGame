@@ -1,14 +1,13 @@
 //
-//  GameViewController.h
+//  HudFireNode.h
 //  responsiveControlsForSpriteKitGame
 //
-
+//  Created by Macbook on 26.01.2015.
 //  Copyright (c) 2015 Amadeusz Polak. All rights reserved.
 //
 
 @import SpriteKit;
-@import UIKit;
 
-@interface GameViewController : UIViewController
+@interface HUDFireNode : SKView
 
 @end
